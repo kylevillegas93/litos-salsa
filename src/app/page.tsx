@@ -13,7 +13,7 @@ export default function Home() {
           height={78}
           priority
         />
-        <h3>Welcome to Lito's Salsa / ¡Bienvenidx a Lito's Salsa!</h3>
+        <h3>Welcome to Lito&apos;s Salsa / ¡Bienvenidx a Lito&apos;s Salsa!</h3>
         
         <form className={styles.form}>
           <label htmlFor="name">
