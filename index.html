@@ -1,5 +1,5 @@
 <html>
-    <body>
+    <body style="background-color: black; color: white;">
         <div style="display: table; width: 100%; height: 100vh;">
             <div style="display: table-cell; text-align: center; vertical-align: middle;">
                 <h3>Lito's Salsa</h4>
@@ -7,7 +7,7 @@
                 <div id="orders-form">
                     <label>Name:</label>
                     <input type="text"/>
-                    <button type="submit" style="background: black; color: white" disabled=>Order</button>
+                    <button type="submit" style="background: gary; color: white;" disabled=>Order</button>
                 </div>
                 <p>
                     Pickup on <i>Sundays 12pm-5pm</i> on the corner of <b>Marcy Ave and Monroe St.</b>
@@ -18,7 +18,7 @@
         </div>
     </body>
     <script>
-        const closed = true;
+        const closed = false;
 
         const closedNotification = document.getElementById("closed-notification");
         const ordersForm = document.getElementById("orders-form");
