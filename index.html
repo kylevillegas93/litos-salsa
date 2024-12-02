@@ -3,10 +3,12 @@
         <div style="display: table; width: 100%; height: 100vh;">
             <div style="display: table-cell; text-align: center; vertical-align: middle;">
                 <h3>Lito's Salsa</h4>
-                <p><i>We are closed.</i></p>
-                <label>Name:</label>
-                <input type="text"/>
-                <button type="submit" style="background: black; color: white" disabled=>Order</button>
+                <p id="closed-notification"><i>We are closed.</i></p>
+                <div id="orders-form">
+                    <label>Name:</label>
+                    <input type="text"/>
+                    <button type="submit" style="background: black; color: white" disabled=>Order</button>
+                </div>
                 <p>
                     Pickup on <i>Sundays 12pm-5pm</i> on the corner of <b>Marcy Ave and Monroe St.</b>
                     <br/>
@@ -15,4 +17,13 @@
             </div>
         </div>
     </body>
+    <script>
+        const closed = true;
+
+        const closedNotification = document.getElementById("closed-notification");
+        const ordersForm = document.getElementById("orders-form");
+
+        closedNotification.style.display = closed ? "block" : "none";
+        ordersForm.style.display = closed ? "none" : "block";
+    </script>
 </html>
